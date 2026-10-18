@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Favas K – Senior Full-Stack Developer & Digital Marketing Specialist</title>
+<meta name="description" content="Mohamed Favas K – Technical Team Lead, Senior Full-Stack Developer & Digital Marketing Specialist with 12+ years of experience in Dubai, UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#080d1a;
+  --text:#1e2235;
+  --muted:#5c6278;
+  --accent:#2563eb;
+  --accent-2:#3b82f6;
+  --accent-3:#60a5fa;
+  --teal:#0ea5e9;
+  --purple:#7c3aed;
+  --bg:#eef2ff;
+  --glass:rgba(255,255,255,0.58);
+  --glass-strong:rgba(255,255,255,0.88);
+  --border:rgba(255,255,255,0.92);
+  --shadow:0 10px 40px rgba(37,99,235,0.10);
+  --radius:28px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse 900px 600px at 90% 0%,rgba(37,99,235,0.18),transparent 60%),
+    radial-gradient(ellipse 700px 500px at 0% 50%,rgba(14,165,233,0.14),transparent 55%),
+    radial-gradient(ellipse 800px 600px at 100% 90%,rgba(124,58,237,0.14),transparent 60%),
+    linear-gradient(180deg,#f0f4ff,#e8eeff);
+  background-attachment:fixed;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1200px;margin:0 auto;padding:16px 20px 48px}
+.glass{
+  background:var(--glass);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-radius:var(--radius);
+}
+.eyebrow{
+  font-size:11px;font-weight:700;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--accent);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--accent);border-radius:2px}
+h2.title{
+  font-family:'Outfit',sans-serif;
+  font-size:26px;font-weight:700;color:var(--ink);
+  letter-spacing:-0.02em;margin-top:8px;line-height:1.25;
+}
+section{margin-top:18px;padding:36px 44px}
+
+/* NAV */
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 20px;border-radius:26px;
+  position:sticky;top:12px;z-index:100;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:44px;height:44px;border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--teal));
+  display:grid;place-items:center;
+  font-family:'Outfit',sans-serif;font-weight:800;color:#fff;font-size:16px;
+  box-shadow:0 4px 16px rgba(37,99,235,0.35);
+}
+.brand b{display:block;font-size:13.5px;color:var(--ink);line-height:1.1;font-weight:700}
+.brand small{font-size:10px;color:var(--muted)}
+.menu{display:flex;gap:4px}
+.menu a{font-size:12px;color:var(--muted);padding:8px 15px;border-radius:999px;transition:0.2s;font-weight:500}
+.menu a:hover{color:var(--ink);background:rgba(255,255,255,0.6)}
+.menu a.active{background:#fff;color:var(--accent);box-shadow:0 4px 14px rgba(0,0,0,0.07);font-weight:600}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12.5px;font-weight:600;padding:12px 22px;border-radius:999px;
+  border:1px solid var(--border);transition:0.25s;cursor:pointer;font-family:inherit;white-space:nowrap;
+}
+.btn.light{background:rgba(255,255,255,0.8);color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,0.06)}
+.btn.dark{background:linear-gradient(135deg,var(--accent),#1d4ed8);color:#fff;border-color:transparent;box-shadow:0 10px 28px rgba(37,99,235,0.35)}
+.btn.teal{background:linear-gradient(135deg,var(--teal),#0369a1);color:#fff;border-color:transparent;box-shadow:0 10px 28px rgba(14,165,233,0.35)}
+.btn:hover{transform:translateY(-2px)}
+.btn.dark:hover{box-shadow:0 14px 36px rgba(37,99,235,0.45)}
+.btn svg{width:14px;height:14px;flex-shrink:0}
+
+/* HERO */
+#home{
+  display:grid;grid-template-columns:1.15fr 1fr;
+  align-items:center;gap:24px;padding:44px 44px 40px;margin-top:16px;
+  position:relative;overflow:hidden;min-height:470px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);
+  border-radius:999px;padding:6px 14px;
+  font-size:11px;font-weight:600;color:var(--accent);margin-bottom:16px;
+}
+.hero-badge .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#22c55e;box-shadow:0 0 0 2px rgba(34,197,94,0.25);
+  animation:pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:0.5}}
+#home h1{
+  font-family:'Outfit',sans-serif;font-size:50px;font-weight:800;color:var(--ink);
+  letter-spacing:-0.03em;line-height:1.08;margin-bottom:8px;
+}
+#home h1 .highlight{
+  background:linear-gradient(135deg,var(--accent),var(--teal));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+#home h3{font-size:15px;font-weight:500;color:var(--muted);margin-bottom:18px;line-height:1.6}
+#home .lead{font-size:13.5px;color:var(--muted);margin-bottom:28px;max-width:380px;line-height:1.7}
+#home .cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.quick-links{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.quick-links .ql-label{font-size:11px;color:var(--muted);font-weight:500}
+.quick-link-icon{
+  width:36px;height:36px;border-radius:10px;
+  background:rgba(255,255,255,0.85);border:1px solid var(--border);
+  display:grid;place-items:center;box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  transition:0.2s;font-size:14px;
+}
+.quick-link-icon:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.12)}
+
+/* Hero Visual */
+.hero-visual{position:relative;height:430px}
+.hero-frame{
+  position:absolute;inset:0 10px 0 20px;
+  border-radius:80px 80px 80px 50px/70px 70px 70px 50px;
+  background:linear-gradient(160deg,rgba(255,255,255,0.75),rgba(196,218,255,0.5));
+  border:2px solid rgba(255,255,255,0.95);
+  box-shadow:inset 0 0 40px rgba(255,255,255,0.9),0 24px 60px rgba(37,99,235,0.18);
+  overflow:hidden;display:flex;align-items:center;justify-content:center;
+}
+.hero-frame::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 65% 20%,rgba(37,99,235,0.2),transparent 55%);
+}
+.hero-inner{
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:center;gap:14px;padding:30px 22px;
+}
+.avatar-circle{
+  width:110px;height:110px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--teal));
+  display:grid;place-items:center;
+  font-family:'Outfit',sans-serif;font-size:38px;font-weight:800;color:#fff;
+  box-shadow:0 12px 40px rgba(37,99,235,0.4);letter-spacing:-1px;
+}
+.avatar-photo{
+  width:120px;height:120px;border-radius:50%;
+  object-fit:cover;object-position:center top;
+  border:3px solid transparent;
+  background:linear-gradient(#fff,#fff) padding-box,
+             linear-gradient(135deg,var(--accent),var(--teal)) border-box;
+  box-shadow:0 12px 40px rgba(37,99,235,0.35),0 0 0 5px rgba(255,255,255,0.7);
+  display:block;flex-shrink:0;
+}
+@media(max-width:680px){
+  .avatar-photo{width:96px;height:96px}
+}
+.avatar-name{font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;color:var(--ink);text-align:center}
+.avatar-role{font-size:11.5px;color:var(--muted);text-align:center;max-width:200px;line-height:1.5}
+.tech-pills{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;max-width:220px}
+.tech-pill{
+  font-size:10px;font-weight:600;padding:3px 10px;border-radius:999px;
+  background:rgba(37,99,235,0.08);color:var(--accent);border:1px solid rgba(37,99,235,0.18);
+}
+.chip{
+  position:absolute;background:var(--glass-strong);border:1px solid var(--border);
+  box-shadow:var(--shadow);backdrop-filter:blur(16px);border-radius:22px;padding:14px 18px;
+}
+.chip.exp{top:10px;right:-4px;text-align:center;width:96px}
+.chip.exp b{display:block;font-size:32px;font-weight:800;color:var(--ink);line-height:1;font-family:'Outfit',sans-serif}
+.chip.exp small{font-size:10px;color:var(--muted)}
+.chip.loc{bottom:36px;right:-10px;display:flex;align-items:center;gap:8px;padding:10px 16px}
+.chip.loc .ldot{width:8px;height:8px;border-radius:50%;background:#22c55e}
+.chip.loc span{font-size:12px;color:var(--ink);font-weight:600}
+.orb{
+  position:absolute;left:2px;top:42%;width:44px;height:44px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff,#bfdbfe 60%,#93c5fd);
+  box-shadow:0 10px 24px rgba(37,99,235,0.35);
+  display:grid;place-items:center;color:var(--accent);font-size:17px;
+}
+.hero-visual{animation:float-hero 6s ease-in-out infinite}
+@keyframes float-hero{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ABOUT */
+#about{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.stat-card{
+  background:rgba(255,255,255,0.7);border:1px solid var(--border);
+  border-radius:18px;padding:16px 18px;transition:0.3s;
+}
+.stat-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(37,99,235,0.12)}
+.s-icon{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-size:14px;margin-bottom:10px}
+.stat-card b{display:block;font-size:22px;font-weight:800;color:var(--ink);font-family:'Outfit',sans-serif}
+.stat-card small{font-size:11px;color:var(--muted)}
+.about-text p{font-size:13.5px;color:var(--muted);line-height:1.75;margin-bottom:14px}
+.highlights{margin-top:20px;display:flex;flex-direction:column;gap:9px}
+.hl-item{display:flex;align-items:flex-start;gap:12px;font-size:12.5px;color:var(--text)}
+.hl-item .hi{font-size:16px;flex-shrink:0;margin-top:1px}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.skill-cat{
+  background:rgba(255,255,255,0.65);border:1px solid var(--border);
+  border-radius:20px;padding:20px 22px;transition:0.3s;
+}
+.skill-cat:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(37,99,235,0.14)}
+.skill-cat h4{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.cat-icon{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-size:12px;flex-shrink:0}
+.skill-tags{display:flex;flex-wrap:wrap;gap:7px}
+.skill-tag{
+  font-size:10.5px;font-weight:600;padding:4px 11px;border-radius:999px;
+  background:rgba(37,99,235,0.07);color:var(--accent);border:1px solid rgba(37,99,235,0.15);
+  transition:0.2s;
+}
+.skill-tag:hover{background:var(--accent);color:#fff}
+
+/* EXPERIENCE */
+.timeline{margin-top:24px;position:relative}
+.timeline::before{
+  content:'';position:absolute;left:24px;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,var(--accent),var(--teal),transparent);border-radius:2px;
+}
+.exp-item{display:flex;gap:24px;margin-bottom:26px;position:relative}
+.exp-item:last-child{margin-bottom:0}
+.exp-dot{
+  width:50px;height:50px;border-radius:16px;flex-shrink:0;
+  display:grid;place-items:center;background:rgba(255,255,255,0.9);
+  border:2px solid var(--border);box-shadow:0 6px 18px rgba(37,99,235,0.12);
+  z-index:1;font-size:18px;
+}
+.exp-body{
+  flex:1;background:rgba(255,255,255,0.65);border:1px solid var(--border);
+  border-radius:20px;padding:20px 24px;transition:0.3s;
+}
+.exp-body:hover{box-shadow:0 12px 32px rgba(37,99,235,0.12);transform:translateX(4px)}
+.exp-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.exp-header h4{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.exp-company{font-size:12px;color:var(--accent);font-weight:600}
+.exp-date{
+  font-size:11px;font-weight:600;padding:4px 12px;border-radius:999px;
+  background:rgba(37,99,235,0.08);color:var(--accent);white-space:nowrap;
+  border:1px solid rgba(37,99,235,0.15);
+}
+.exp-current{background:rgba(34,197,94,0.1);color:#15803d;border-color:rgba(34,197,94,0.2)}
+.exp-bullets{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.exp-bullets li{font-size:12px;color:var(--muted);line-height:1.6;display:flex;align-items:baseline;gap:8px}
+.exp-bullets li::before{content:'▸';color:var(--accent);font-size:10px;flex-shrink:0}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:22px}
+.proj-card{
+  border-radius:22px;overflow:hidden;background:rgba(255,255,255,0.65);
+  border:1px solid var(--border);transition:0.35s;display:flex;flex-direction:column;
+}
+.proj-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(37,99,235,0.2)}
+.proj-thumb{
+  height:150px;display:flex;align-items:center;justify-content:center;
+  font-size:44px;position:relative;overflow:hidden;
+}
+.proj-thumb::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,0.06));
+}
+.proj-body{padding:18px 20px;flex:1;display:flex;flex-direction:column}
+.proj-body h4{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.proj-body p{font-size:11.5px;color:var(--muted);line-height:1.6;flex:1}
+.proj-tech{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.proj-tech span{
+  font-size:10px;font-weight:600;padding:3px 9px;border-radius:999px;
+  background:rgba(37,99,235,0.07);color:var(--accent);border:1px solid rgba(37,99,235,0.13);
+}
+.proj-footer{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 20px 16px;border-top:1px solid rgba(37,99,235,0.07);
+}
+.proj-link{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:600;color:var(--accent);transition:0.2s;
+}
+.proj-link:hover{gap:9px}
+.proj-link svg{width:12px;height:12px}
+
+/* EDUCATION */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
+.edu-card,.cert-card{
+  background:rgba(255,255,255,0.65);border:1px solid var(--border);
+  border-radius:20px;padding:22px 24px;transition:0.3s;
+}
+.edu-card:hover,.cert-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(37,99,235,0.12)}
+.edu-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:20px;margin-bottom:14px}
+.edu-card h4,.cert-card h4{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.edu-school,.cert-issuer{font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px}
+.edu-year,.cert-year{font-size:11.5px;color:var(--muted);line-height:1.5}
+.edu-badge{
+  margin-top:10px;display:inline-block;font-size:10px;font-weight:700;
+  padding:4px 12px;border-radius:999px;background:rgba(34,197,94,0.1);
+  color:#15803d;border:1px solid rgba(34,197,94,0.2);
+}
+
+/* CONTACT */
+#contact{
+  display:grid;grid-template-columns:1fr 1.55fr;
+  gap:36px;align-items:stretch;position:relative;overflow:hidden;
+}
+.contact-info{display:flex;flex-direction:column}
+.contact-info h2{
+  font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;color:var(--ink);
+  line-height:1.3;margin:10px 0 14px;
+}
+.contact-info > p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:22px}
+.contact-links{display:flex;flex-direction:column;gap:10px}
+.c-link{
+  display:flex;align-items:center;gap:14px;padding:12px 16px;border-radius:14px;
+  background:rgba(255,255,255,0.7);border:1px solid var(--border);
+  font-size:12.5px;color:var(--text);transition:0.25s;
+}
+.c-link:hover{transform:translateX(4px);box-shadow:0 8px 20px rgba(37,99,235,0.1);color:var(--accent)}
+.c-icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:14px;flex-shrink:0}
+.c-link strong{display:block;font-size:10px;color:var(--muted);font-weight:500;margin-bottom:1px}
+.form-wrap{
+  background:rgba(255,255,255,0.7);border:1px solid var(--border);
+  border-radius:22px;padding:28px;
+}
+.form-wrap h3{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid .full{grid-column:1/-1}
+.form-grid input,.form-grid select,.form-grid textarea{
+  width:100%;padding:13px 15px;border:1.5px solid rgba(37,99,235,0.12);
+  border-radius:12px;background:rgba(240,244,255,0.7);
+  font-family:inherit;font-size:12.5px;color:var(--text);outline:none;transition:0.2s;
+}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{
+  background:#fff;border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,0.12);
+}
+.form-grid textarea{height:90px;resize:none}
+.form-grid button{grid-column:1/-1;justify-content:center;width:100%;padding:14px}
+.glass-orb{
+  position:absolute;right:-40px;bottom:-40px;width:220px;height:240px;border-radius:50% 40% 50% 45%;
+  background:conic-gradient(from 200deg at 50% 50%,#eff6ff,#93c5fd,#dbeafe,#60a5fa,#eff6ff);
+  filter:blur(2px);opacity:0.8;
+  box-shadow:inset -20px -20px 50px rgba(37,99,235,0.2),inset 20px 20px 50px rgba(255,255,255,0.8);
+  animation:float-orb 8s ease-in-out infinite;pointer-events:none;
+}
+@keyframes float-orb{50%{transform:translateY(-15px) rotate(5deg)}}
+footer{
+  margin-top:18px;padding:20px 40px;display:flex;justify-content:space-between;
+  align-items:center;font-size:11.5px;color:var(--muted);flex-wrap:wrap;gap:10px;
+}
+.footer-links{display:flex;gap:18px}
+.footer-links a{color:var(--muted);transition:0.2s}
+.footer-links a:hover{color:var(--accent)}
+
+/* HAMBURGER */
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;padding:7px 8px;
+  background:rgba(255,255,255,0.85);border:1px solid var(--border);
+  border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+.hamburger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;transition:0.3s}
+.mobile-menu{
+  display:none;flex-direction:column;gap:4px;padding:14px 16px;
+  background:var(--glass-strong);border:1px solid var(--border);
+  border-radius:20px;margin-top:8px;box-shadow:var(--shadow);
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:13px;color:var(--text);padding:10px 14px;border-radius:10px;font-weight:500;transition:0.2s}
+.mobile-menu a:hover{background:rgba(37,99,235,0.07);color:var(--accent)}
+
+/* SCROLL ANIMATION */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+section{scroll-margin-top:80px}
+
+/* RESPONSIVE */
+@media(max-width:1050px){
+  .menu{display:none}
+  .hamburger{display:flex}
+  #home,#about,#contact{grid-template-columns:1fr}
+  .hero-visual{height:300px;order:-1;animation:none}
+  .skills-grid{grid-template-columns:1fr 1fr}
+  .projects-grid{grid-template-columns:1fr 1fr}
+  .edu-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .glass-orb{display:none}
+}
+@media(max-width:680px){
+  section,#home{padding:24px 20px}
+  #home h1{font-size:36px}
+  .skills-grid,.projects-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .form-grid{grid-template-columns:1fr}
+  footer{flex-direction:column;align-items:flex-start;gap:8px}
+  .hero-frame{border-radius:40px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- NAV -->
+<header class="nav glass" id="main-nav">
+  <a href="#home" class="brand">
+    <div class="logo">MF</div>
+    <div><b>Mohamed Favas K</b><small>Full-Stack Dev &amp; Digital Marketing</small></div>
+  </a>
+  <nav class="menu" aria-label="Main navigation">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="Mohamed_Favas.pdf" download class="btn light" id="nav-cv-btn">
+      Download CV
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg>
+    </a>
+    <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle mobile menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="glass" id="home">
+  <div>
+    <div class="hero-badge"><span class="dot"></span>Available for new opportunities</div>
+    <h1>Mohamed<br><span class="highlight">Favas K</span></h1>
+    <h3>Technical Team Lead &nbsp;|&nbsp; Senior Full-Stack Developer<br>Digital Marketing Specialist</h3>
+    <p class="lead">Proactive Full-Stack Developer &amp; Digital Marketing Specialist with <strong>12+ years of experience</strong> building high-performance websites, web applications, and mobile solutions — based in Dubai, UAE.</p>
+    <div class="cta">
+      <a href="#projects" class="btn dark" id="hero-work-btn">
+        View My Projects
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+      </a>
+      <a href="Mohamed_Favas.pdf" download class="btn light" id="hero-cv-btn">
+        Download CV
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg>
+      </a>
+      <a href="#contact" class="btn teal" id="hero-contact-btn">
+        Let's Connect
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+      </a>
+      <a href="https://wa.me/971521523550?text=Hello%20Mohamed%2C%20I%20found%20your%20portfolio%20website%20and%20would%20like%20to%20enquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="hero-whatsapp-btn" style="background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;border-color:transparent;box-shadow:0 10px 28px rgba(37,211,102,0.35)">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </div>
+    <div class="quick-links">
+      <span class="ql-label">Find me on:</span>
+      <a href="mailto:mfavask786@gmail.com" class="quick-link-icon" title="Email mfavask786@gmail.com" id="hero-email">✉️</a>
+      <a href="https://www.linkedin.com/in/mohamed-favas-b6858075/" target="_blank" rel="noopener noreferrer" class="quick-link-icon" title="LinkedIn Profile" id="hero-linkedin">💼</a>
+      <a href="tel:+971521523550" class="quick-link-icon" title="Call +971-521-523550" id="hero-phone">📞</a>
+      <a href="https://wa.me/971521523550?text=Hello%20Mohamed%2C%20I%20found%20your%20portfolio%20website%20and%20would%20like%20to%20enquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="quick-link-icon" title="WhatsApp: Enquire about services" id="hero-whatsapp-icon" style="background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;border-color:transparent">💬</a>
+      <a href="https://maps.google.com/?q=Dubai,UAE" target="_blank" rel="noopener noreferrer" class="quick-link-icon" title="Dubai, UAE" id="hero-location">📍</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-frame">
+      <div class="hero-inner">
+        <img src="profile.jpeg" alt="Mohamed Favas K – Senior Full-Stack Developer" class="avatar-photo" width="120" height="120">
+        <div class="avatar-name">Mohamed Favas K</div>
+        <div class="avatar-role">Senior Full-Stack Developer &amp; Digital Marketing Specialist</div>
+        <div class="tech-pills">
+          <span class="tech-pill">React JS</span>
+          <span class="tech-pill">Node JS</span>
+          <span class="tech-pill">PHP</span>
+          <span class="tech-pill">Magento2</span>
+          <span class="tech-pill">Flutter</span>
+        </div>
+      </div>
+    </div>
+    <div class="orb">⚡</div>
+    <div class="chip exp"><b>12+</b><small>Years of<br>Experience</small></div>
+    <div class="chip loc"><div class="ldot"></div><span>Dubai, UAE</span></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="glass fade-up" id="about">
+  <div>
+    <span class="eyebrow">About Me</span>
+    <h2 class="title">Building Digital Products<br>That Drive Real Business Growth</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="s-icon" style="background:rgba(37,99,235,0.1);color:var(--accent)">🗓️</div>
+        <b>12+</b><small>Years of Experience</small>
+      </div>
+      <div class="stat-card">
+        <div class="s-icon" style="background:rgba(14,165,233,0.1);color:var(--teal)">🏢</div>
+        <b>8</b><small>Companies Worked</small>
+      </div>
+      <div class="stat-card">
+        <div class="s-icon" style="background:rgba(124,58,237,0.1);color:var(--purple)">📱</div>
+        <b>Apps</b><small>Play Store &amp; App Store</small>
+      </div>
+      <div class="stat-card">
+        <div class="s-icon" style="background:rgba(34,197,94,0.1);color:#15803d">📍</div>
+        <b>Dubai</b><small>Based in UAE</small>
+      </div>
+    </div>
+  </div>
+  <div class="about-text">
+    <p>I'm a <strong>Proactive Full-Stack Web, Mobile App Developer &amp; Digital Marketing Specialist</strong> with over <strong>12 years of experience</strong> building high-performance websites, web applications, and mobile solutions.</p>
+    <p>Skilled in front-end technologies (HTML, CSS, JavaScript) and back-end development (PHP and modern frameworks), with expertise in creating scalable, user-focused digital products.</p>
+    <p>Experienced in developing end-to-end solutions — from concept and UI/UX design to deployment and optimization — while integrating effective digital marketing strategies including SEO, social media marketing, performance campaigns, and analytics.</p>
+    <p>Known for strong problem-solving abilities, clean and efficient coding practices, and delivering measurable business growth through technology and marketing alignment.</p>
+    <div class="highlights">
+      <div class="hl-item"><span class="hi">🚀</span><span>E-commerce platforms: Magento2, WooCommerce, Shopify</span></div>
+      <div class="hl-item"><span class="hi">📱</span><span>Mobile apps published on Google Play Store &amp; Apple App Store</span></div>
+      <div class="hl-item"><span class="hi">📊</span><span>Digital marketing: SEO, Google Ads, GTM, GA4, email &amp; WhatsApp campaigns (5,000+ customers)</span></div>
+      <div class="hl-item"><span class="hi">☁️</span><span>Cloud hosting: AWS, Cloudways, Cloudflare</span></div>
+      <div class="hl-item"><span class="hi">🌐</span><span>Fluent in English, Hindi &amp; Malayalam</span></div>
+    </div>
+    <div style="margin-top:24px">
+      <a href="#contact" class="btn dark" id="about-cta">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="glass fade-up" id="skills">
+  <span class="eyebrow">Technical Skills</span>
+  <h2 class="title">Technologies &amp; Expertise</h2>
+  <div class="skills-grid">
+
+    <div class="skill-cat">
+      <h4><div class="cat-icon" style="background:rgba(37,99,235,0.1);color:var(--accent)">🖥️</div>Frontend Development</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span><span class="skill-tag">jQuery</span>
+        <span class="skill-tag">React JS</span><span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Media Query</span><span class="skill-tag">AJAX</span>
+      </div>
+    </div>
+
+    <div class="skill-cat">
+      <h4><div class="cat-icon" style="background:rgba(14,165,233,0.1);color:var(--teal)">⚙️</div>Backend Development</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">PHP</span><span class="skill-tag">Node JS</span>
+        <span class="skill-tag">Go (Golang)</span><span class="skill-tag">LAMP Stack</span>
+        <span class="skill-tag">CodeIgniter</span><span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">WooCommerce JSON/XML</span>
+      </div>
+    </div>
+
+    <div class="skill-cat">
+      <h4><div class="cat-icon" style="background:rgba(124,58,237,0.1);color:var(--purple)">🛒</div>E-Commerce Platforms</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Magento 2</span><span class="skill-tag">WooCommerce</span>
+        <span class="skill-tag">Shopify</span><span class="skill-tag">WordPress</span>
+        <span class="skill-tag">Drupal</span><span class="skill-tag">Typo3</span>
+      </div>
+    </div>
+
+    <div class="skill-cat">
+      <h4><div class="cat-icon" style="background:rgba(245,158,11,0.12);color:#d97706">📱</div>Mobile &amp; Cloud Tools</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Flutter</span><span class="skill-tag">Mobikul (Webkul)</span>
+        <span class="skill-tag">Google Firebase</span><span class="skill-tag">Figma</span>
+        <span class="skill-tag">MySQL</span><span class="skill-tag">AWS</span>
+        <span class="skill-tag">Cloudways</span><span class="skill-tag">Cloudflare</span>
+      </div>
+    </div>
+
+    <div class="skill-cat">
+      <h4><div class="cat-icon" style="background:rgba(16,185,129,0.1);color:#059669">📣</div>Digital Marketing</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Google Ads</span><span class="skill-tag">SEO</span>
+        <span class="skill-tag">GA4</span><span class="skill-tag">GTM</span>
+        <span class="skill-tag">Email Marketing</span><span class="skill-tag">Social Media</span>
+        <span class="skill-tag">Influencer Marketing</span><span class="skill-tag">Google Search Console</span>
+      </div>
+    </div>
+
+    <div class="skill-cat">
+      <h4><div class="cat-icon" style="background:rgba(239,68,68,0.1);color:#dc2626">🛠️</div>Marketing Tools</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Klaviyo</span><span class="skill-tag">Brevo (WhatsApp)</span>
+        <span class="skill-tag">Interakt</span><span class="skill-tag">Constant Contact</span>
+        <span class="skill-tag">Meta Ads</span><span class="skill-tag">Photoshop CS6</span>
+        <span class="skill-tag">TikTok Ads</span><span class="skill-tag">Snapchat Ads</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="glass fade-up" id="experience">
+  <span class="eyebrow">Work Experience</span>
+  <h2 class="title">12+ Years of Professional Journey</h2>
+  <div class="timeline">
+
+    <div class="exp-item">
+      <div class="exp-dot">🏢</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Senior Full-Stack Developer &amp; Digital Marketing Specialist</h4>
+            <div class="exp-company">Leader Group — Dubai, UAE</div>
+          </div>
+          <span class="exp-date exp-current">2024 – Present</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Implemented and successfully published mobile applications on the Google Play Store and Apple App Store.</li>
+          <li>Delivered Magento2, WooCommerce, and Shopify website development projects.</li>
+          <li>Led product digitalization initiatives to enhance sales performance through innovative technology solutions.</li>
+          <li>Managed and integrated ERP systems while maintaining and optimizing website and mobile application performance.</li>
+          <li>Implemented and configured Google Tag Manager (GTM), SEO, Google Analytics 4 (GA4), and Google Search Console (GSC).</li>
+          <li>Executed targeted email marketing campaigns using the CC Email Marketing platform.</li>
+          <li>Managed large-scale WhatsApp marketing campaigns via IK WhatsApp, reaching over 5,000 customers.</li>
+          <li>Coordinated with the eCommerce team to promote best-selling and seasonal products based on sales trends.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">⛳</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Full-Stack Web Developer (Magento2, WordPress)</h4>
+            <div class="exp-company">eGolf Megastore — Dubai, UAE</div>
+          </div>
+          <span class="exp-date">2021 – 2024</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Custom module development and theme customization; debugged third-party plugins on Magento2.</li>
+          <li>UX/UI development using JavaScript, CSS, Ajax, jQuery, and Bootstrap.</li>
+          <li>Managed server hosting using AWS, Cloudways, and Cloudflare.</li>
+          <li>Coordinated mobile app development with third-party team Mobikul (Webkul).</li>
+          <li>Delivered Magento2 website development and feature enhancements.</li>
+          <li>Assisted with marketing: Google Ads, email campaigns, and online promotion.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">🏷️</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Web Developer (Magento2, WordPress)</h4>
+            <div class="exp-company">Redtag (RED TAG &amp; 24 Fashion) — Dubai, UAE</div>
+          </div>
+          <span class="exp-date">2019 – 2021</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>WordPress website development with focus on performance and user experience.</li>
+          <li>JavaScript and jQuery application development for dynamic web features.</li>
+          <li>Performed SEO and optimized landing pages of WordPress websites.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">💻</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Web Developer (WordPress)</h4>
+            <div class="exp-company">Orengering — Dubai, UAE</div>
+          </div>
+          <span class="exp-date">2019</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>WordPress website development and implementation.</li>
+          <li>JavaScript and jQuery application development.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">🔧</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Web Developer (WordPress, CodeIgniter)</h4>
+            <div class="exp-company">INFOTICK Solutions — Kerala, India</div>
+          </div>
+          <span class="exp-date">2018</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>WordPress and CodeIgniter website development.</li>
+          <li>cPanel web hosting and domain hosting management.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">🎪</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Web Developer</h4>
+            <div class="exp-company">Traicon Events — Bangalore, India</div>
+          </div>
+          <span class="exp-date">2016 – 2017</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>HTML, JavaScript, jQuery, Bootstrap, and PHP website development for events.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">🛡️</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Web Developer</h4>
+            <div class="exp-company">Ready Assist — Bangalore, India</div>
+          </div>
+          <span class="exp-date">2016</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Designed JavaScript-based responsive apps with website integration.</li>
+          <li>Responsive web development and JavaScript app building.</li>
+          <li>Fixed issues on existing websites.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">📡</div>
+      <div class="exp-body">
+        <div class="exp-header">
+          <div>
+            <h4>Web Developer (Drupal, WordPress, Typo3)</h4>
+            <div class="exp-company">Axon Communication — Calicut, India</div>
+          </div>
+          <span class="exp-date">2014 – 2016</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Responsive website design with UI development.</li>
+          <li>JavaScript web application development.</li>
+          <li>cPanel hosting, site migration, and domain registration.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="glass fade-up" id="projects">
+  <span class="eyebrow">Featured Projects</span>
+  <h2 class="title">Portfolio &amp; Selected Work</h2>
+  <div class="projects-grid">
+
+    <article class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">🏆</div>
+      <div class="proj-body">
+        <h4>Leader Sport Website</h4>
+        <p>Full e-commerce platform built on Magento2 for Leader Group's sporting goods brand with ERP integration, digital marketing setup, GTM, GA4, and SEO.</p>
+        <div class="proj-tech"><span>Magento2</span><span>PHP</span><span>JavaScript</span><span>SEO</span><span>GTM</span></div>
+      </div>
+      <div class="proj-footer">
+        <a href="https://leadersport.com" target="_blank" rel="noopener" class="proj-link" id="proj-leadersport">
+          View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0)">📱</div>
+      <div class="proj-body">
+        <h4>Leader Sport Mobile App</h4>
+        <p>Cross-platform mobile application published on Google Play Store and Apple App Store for Leader Group's e-commerce operations.</p>
+        <div class="proj-tech"><span>Flutter</span><span>Mobikul</span><span>Magento2 API</span><span>Firebase</span></div>
+      </div>
+      <div class="proj-footer">
+        <a href="https://leadersport.com" target="_blank" rel="noopener" class="proj-link" id="proj-leadersport-app">
+          View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe)">⛳</div>
+      <div class="proj-body">
+        <h4>eGolf Megastore</h4>
+        <p>Premier golf equipment e-commerce platform on Magento2 with custom modules, mobile app integration via Mobikul, and cloud hosting on AWS and Cloudways.</p>
+        <div class="proj-tech"><span>Magento2</span><span>AWS</span><span>Cloudflare</span><span>jQuery</span><span>Bootstrap</span></div>
+      </div>
+      <div class="proj-footer">
+        <a href="https://egolfmegastore.com" target="_blank" rel="noopener" class="proj-link" id="proj-egolf">
+          View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#fef3c7,#fde68a)">🏌️</div>
+      <div class="proj-body">
+        <h4>eGolf Tour</h4>
+        <p>Tournament and tour management platform for eGolf Megastore delivering a seamless online golfing event experience.</p>
+        <div class="proj-tech"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>CSS</span></div>
+      </div>
+      <div class="proj-footer">
+        <a href="https://egolftour.com" target="_blank" rel="noopener" class="proj-link" id="proj-egolftour">
+          View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8)">🛍️</div>
+      <div class="proj-body">
+        <h4>Red Tag &amp; 24 Fashion</h4>
+        <p>Large-scale fashion retail e-commerce websites with SEO optimization, landing page development, and performance marketing integrations.</p>
+        <div class="proj-tech"><span>Magento2</span><span>WordPress</span><span>SEO</span><span>jQuery</span><span>Google Ads</span></div>
+      </div>
+      <div class="proj-footer">
+        <a href="https://redtag.com" target="_blank" rel="noopener" class="proj-link" id="proj-redtag">
+          View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#ecfdf5,#d1fae5)">⚽</div>
+      <div class="proj-body">
+        <h4>Sports Society &amp; Harvard Club</h4>
+        <p>Community and membership platforms for sports enthusiasts with event management, membership registration, and content management.</p>
+        <div class="proj-tech"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>MySQL</span></div>
+      </div>
+      <div class="proj-footer">
+        <a href="https://sportsociety.ae" target="_blank" rel="noopener" class="proj-link" id="proj-sportsociety">
+          View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="glass fade-up" id="education">
+  <span class="eyebrow">Education &amp; Background</span>
+  <h2 class="title">Credentials &amp; Personal Details</h2>
+  <div class="edu-grid">
+
+    <div class="edu-card">
+      <div class="edu-icon" style="background:rgba(37,99,235,0.1);color:var(--accent)">🎓</div>
+      <h4>B.Tech in Information Technology</h4>
+      <div class="edu-school">Anna University — Chennai, India</div>
+      <div class="edu-year">2010 – 2014</div>
+      <span class="edu-badge">MOHRE Attested</span>
+    </div>
+
+    <div class="cert-card">
+      <div class="edu-icon" style="background:rgba(14,165,233,0.1);color:var(--teal)">🌍</div>
+      <h4>Multilingual Professional</h4>
+      <div class="cert-issuer">Language Proficiency</div>
+      <div class="cert-year">English (Fluent) · Hindi (Fluent) · Malayalam (Fluent)</div>
+    </div>
+
+    <div class="cert-card">
+      <div class="edu-icon" style="background:rgba(245,158,11,0.12);color:#d97706">🏎️</div>
+      <h4>Dubai Driving License</h4>
+      <div class="cert-issuer">Dubai RTA (Roads and Transport Authority)</div>
+      <div class="cert-year">UAE — Dubai Issued</div>
+    </div>
+
+    <div class="cert-card">
+      <div class="edu-icon" style="background:rgba(124,58,237,0.1);color:var(--purple)">📋</div>
+      <h4>Service Operations Management</h4>
+      <div class="cert-issuer">Professional Credential</div>
+      <div class="cert-year">Providing coordination and management, ensuring continuous interaction with customers to identify areas of concern and improve service levels.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="glass fade-up" id="contact">
+  <div class="contact-info">
+    <span class="eyebrow">Let's Connect</span>
+    <h2>Have a project in mind?<br>Let's build something great together.</h2>
+    <p>I'm open to new opportunities, freelance projects, and collaborations. Feel free to reach out — I typically respond within 24 hours.</p>
+    <div class="contact-links">
+      <a href="mailto:mfavask786@gmail.com" class="c-link" id="contact-email-link">
+        <div class="c-icon" style="background:rgba(37,99,235,0.1);color:var(--accent)">✉️</div>
+        <div><strong>Email</strong>mfavask786@gmail.com</div>
+      </a>
+      <a href="tel:+971521523550" class="c-link" id="contact-phone-link">
+        <div class="c-icon" style="background:rgba(34,197,94,0.1);color:#15803d">📞</div>
+        <div><strong>Phone / WhatsApp</strong>+971-521-523550</div>
+      </a>
+      <a href="https://wa.me/971521523550?text=Hello%20Mohamed%2C%20I%20found%20your%20portfolio%20website%20and%20would%20like%20to%20enquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="c-link" id="contact-whatsapp-link" style="background:linear-gradient(135deg,rgba(37,211,102,0.12),rgba(18,140,126,0.08));border-color:rgba(37,211,102,0.3)">
+        <div class="c-icon" style="background:linear-gradient(135deg,#25d366,#128c7e);color:#fff">💬</div>
+        <div><strong>WhatsApp</strong>Enquire on WhatsApp →</div>
+      </a>
+      <a href="https://www.linkedin.com/in/mohamed-favas-b6858075/" target="_blank" rel="noopener noreferrer" class="c-link" id="contact-linkedin-link">
+        <div class="c-icon" style="background:rgba(14,165,233,0.1);color:var(--teal)">💼</div>
+        <div><strong>LinkedIn</strong>linkedin.com/in/mohamed-favas-b6858075</div>
+      </a>
+      <div class="c-link">
+        <div class="c-icon" style="background:rgba(124,58,237,0.1);color:var(--purple)">📍</div>
+        <div><strong>Location</strong>Dubai, UAE</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-wrap">
+    <h3>Send Me a Message</h3>
+    <form class="form-grid" id="contact-form" onsubmit="handleForm(event)">
+      <input type="text" id="form-name" placeholder="Your Name" required>
+      <input type="email" id="form-email" placeholder="Your Email" required>
+      <select class="full" id="form-subject" required>
+        <option value="" disabled selected>Project Type</option>
+        <option>Full-Stack Web Development</option>
+        <option>E-Commerce (Magento2 / WooCommerce / Shopify)</option>
+        <option>Mobile App Development</option>
+        <option>Digital Marketing / SEO</option>
+        <option>WordPress Development</option>
+        <option>Technical Consultation</option>
+        <option>Other</option>
+      </select>
+      <textarea class="full" id="form-message" placeholder="Describe your project or inquiry…" required></textarea>
+      <button type="submit" class="btn dark" id="form-submit">
+        Send Message
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <div class="glass-orb"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="glass">
+  <span>© 2026 Mohamed Favas K. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="mailto:mfavask786@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/mohamed-favas-b6858075/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://wa.me/971521523550?text=Hello%20Mohamed%2C%20I%20found%20your%20portfolio%20website%20and%20would%20like%20to%20enquire%20about%20your%20services" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="tel:+971521523550">Phone</a>
+    <a href="Mohamed_Favas.pdf" download>Download CV</a>
+  </div>
+  <span>Dubai, UAE 🇦🇪</span>
+</footer>
+
+</div>
+
+<script>
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+hamburger.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') mobileMenu.classList.toggle('open'); });
+mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+// Active nav on scroll
+const navLinks = document.querySelectorAll('.menu a');
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      navLinks.forEach(l => {
+        l.classList.remove('active');
+        if(l.getAttribute('href') === '#'+entry.target.id) l.classList.add('active');
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+
+// Fade-up animations
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){ entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+
+// Smooth scroll with offset
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e){
+    const t = document.querySelector(this.getAttribute('href'));
+    if(t){ e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' }); }
+  });
+});
+
+// Contact form
+function handleForm(e){
+  e.preventDefault();
+  const btn = document.getElementById('form-submit');
+  btn.textContent = 'Sending…'; btn.disabled = true;
+  setTimeout(() => {
+    alert('✅ Message sent!\n\nThanks for reaching out. Mohamed will get back to you within 24 hours.\n\n📧 mfavask786@gmail.com\n📞 +971-521-523550');
+    e.target.reset();
+    btn.innerHTML = 'Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>';
+    btn.disabled = false;
+  }, 900);
+}
+</script>
+</body>
+</html>
